@@ -14,12 +14,7 @@
     background-color: aqua;
 }
 
-.blockMain {
-    border: 1px solid;
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.photo img {
+    width: 350px;
+    height: 400px;
 }

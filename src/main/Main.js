@@ -1,17 +1,18 @@
 import React from "react";
-import styles from "./Main.module.css"
+import styles from "./Main.module.css";
+import stylesContainer from "./../common/styles/Container.module.css";
 
 function Main() {
     return (
         <div className={styles.main}>
-            <div className={styles.blockMain}>
+            <div className={stylesContainer.container}>
                 <div className={styles.text}>
                     <span>Hi There</span>
                     <h1>J am Elena Kritskaya</h1>
                     <p>Frontend Developer</p>
                 </div>
                 <div className={styles.photo}>
-                    <img src="https://images.vexels.com/media/users/3/158067/isolated/preview/c7d1cdffff99983cf006d81639b25ca0-long-wavy-hair-woman-avatar.png" alt={''}/>
+                    <img src='https://img.freepik.com/free-vector/girls-cartoon-wavy-hair_8462-2849.jpg?size=338&ext=jpg' alt={''}/>
                 </div>
             </div>
         </div>
