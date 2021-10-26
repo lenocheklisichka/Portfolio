@@ -20,10 +20,11 @@
 }
 
 .projectView {
-    width: 100px;
-    padding: 10px;
-    border: 1px solid goldenrod;
-    border-radius: 10px;
-    background-color: goldenrod;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     margin: 80px auto;
+    text-decoration: none;
 }
+
