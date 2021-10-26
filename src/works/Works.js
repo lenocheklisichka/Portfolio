@@ -9,8 +9,8 @@ function Works() {
             <div className={`${stylesContainer.container} ${styles.worksContainer}`}>
                 <h2 className={styles.title}>My works</h2>
                 <div className={styles.works}>
-                    <Work title={"Project name"} description={"Short description"}/>
-                    <Work title={"Project name"} description={"Short description"}/>
+                    <Work title={"Social Network"} description={"Short description"}/>
+                    <Work title={"Todolist"} description={"Short description"}/>
                 </div>
             </div>
         </div>

@@ -12,7 +12,7 @@ function Main() {
                     <p>Frontend Developer</p>
                 </div>
                 <div className={styles.photo}>
-                    <img src='https://img.freepik.com/free-vector/girls-cartoon-wavy-hair_8462-2849.jpg?size=338&ext=jpg' alt={''}/>
+                    <img src='' alt={''}/>
                 </div>
             </div>
         </div>
