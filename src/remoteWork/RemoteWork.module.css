@@ -14,10 +14,11 @@
 
 .title {
     font-size: 20px;
+    background-color: #58e7ff;
 }
 
 .button {
-    width: 200px;
+    width: 100px;
     padding: 10px;
     background-color: sandybrown;
     border: 1px solid sandybrown;

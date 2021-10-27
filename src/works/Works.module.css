@@ -1,6 +1,9 @@
 .worksBlock {
-    background-color: fuchsia;
-    height: 100vh;
+    background-color: #ff88f7;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .worksContainer {
@@ -10,6 +13,7 @@
 
 .title {
     font-size: 25px;
+    background-color: #ff9b33;
 }
 
 .works {

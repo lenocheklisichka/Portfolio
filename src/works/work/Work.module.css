@@ -8,9 +8,16 @@
 }
 
 .img {
-    width: 300px;
+    width: 100%;
     height: 200px;
-    background-color: gold;
+    background-color: #fff675;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    background-color: white;
 }
 
 .description {
@@ -20,11 +27,8 @@
 }
 
 .projectView {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    margin: 80px auto;
     text-decoration: none;
+    width: 100px;
+    padding: 5px;
+    background-color: mediumspringgreen;
 }
-

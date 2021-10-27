@@ -6,7 +6,7 @@ function Footer() {
     return (
         <div className={styles.footerBlock}>
             <div className={styles.footerContainer}>
-                <h3>Elena Kritskaya</h3>
+                <h3 className={styles.title}>Elena Kritskaya</h3>
                 <div className={styles.iconBlock}>
                     <div className={styles.icons}>
                         <IconNetwork icon={<img src={'icon/icons8-whatsapp.svg'} alt={'icon'}/>}/>

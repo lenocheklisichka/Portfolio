@@ -1,11 +1,14 @@
 .main {
     background-color: coral;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .text {
     background-color: white;
-    width: 400px;
+    width: 350px;
     padding: 20px;
 }
 

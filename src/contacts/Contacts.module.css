@@ -1,7 +1,11 @@
 .contactsBlock {
     background-color: #f48fb1;
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .contactsContainer {
     border: 1px solid;
     width: 80%;
@@ -12,6 +16,11 @@
     flex-direction: column;
     align-items: center;
 }
+
+.title {
+    background-color: #ffdf4a;
+}
+
 .contacts {
     border: 1px solid;
     width: 100%;
@@ -22,18 +31,17 @@
 .form {
     display: flex;
     flex-direction: column;
+    width: 260px;
+    border: 1px solid;
+    margin: 50px auto;
 }
 
-.contactForm {
-    border: 1px solid;
-    width: 60%;
-    margin: 100px auto;
-}
 .inputForm {
     margin-bottom: 10px;
 }
+
 .buttonForm {
-    width: 200px;
+    width: 100px;
     padding: 10px;
     background-color: gold;
     border: 1px solid gold;

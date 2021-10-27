@@ -12,7 +12,7 @@ function Main() {
                     <p>Frontend Developer</p>
                 </div>
                 <div className={styles.photo}>
-                    <img src='' alt={''}/>
+                    <img src={''} alt={''}/>
                 </div>
             </div>
         </div>

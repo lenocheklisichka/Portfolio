@@ -7,7 +7,7 @@ function Work(props) {
             <div className={styles.img}>
                 <a href={''} className={styles.projectView}>VIEW</a>
             </div>
-            <h3>{props.title}</h3>
+            <h3 className={styles.title}>{props.title}</h3>
             <span className={styles.description}>{props.description}</span>
         </div>
     );
