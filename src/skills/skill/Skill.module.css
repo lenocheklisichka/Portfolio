@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .icon {
@@ -18,3 +19,18 @@
     width: 200px;
     margin-bottom: 10px;
 }
+
+/*MEDIA*/
+@media screen and (max-width:641px) {
+    .skill {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:953px) {
+    .skill {
+        margin-bottom: 10px;
+    }
+}
+
+

@@ -4,6 +4,14 @@
     height: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+/*MEDIA*/
+@media screen and (max-width:774px) {
+    .container {
+        justify-content: center;
+    }
 }

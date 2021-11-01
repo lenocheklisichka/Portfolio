@@ -8,8 +8,7 @@
 
 .text {
     background-color: white;
-    width: 350px;
-    padding: 20px;
+    text-align: center;
 }
 
 .photo {

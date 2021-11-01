@@ -13,8 +13,9 @@
 }
 
 .title {
-    font-size: 20px;
     background-color: #58e7ff;
+    font-size: 20px;
+    text-align: center;
 }
 
 .button {

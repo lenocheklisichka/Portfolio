@@ -11,6 +11,7 @@ function Works() {
                 <div className={styles.works}>
                     <Work title={"Social Network"} description={"Short description"}/>
                     <Work title={"Todolist"} description={"Short description"}/>
+                    <Work title={"Counter"} description={"Short description"}/>
                 </div>
             </div>
         </div>
