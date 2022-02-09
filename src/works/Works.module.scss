@@ -1,0 +1,22 @@
+.worksBlock {
+  background-color: #80deea;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .worksContainer {
+    justify-content: center;
+
+    .works {
+      width: 100%;
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      @media screen and (max-width: 1168px) {
+        justify-content: center;
+      }
+    }
+  }
+}

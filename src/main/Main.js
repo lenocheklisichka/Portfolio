@@ -1,18 +1,19 @@
 import React from "react";
 import styles from "./Main.module.css";
-import stylesContainer from "./../common/styles/Container.module.css";
+import ava from "../assets/image/photo-ava.jpg"
 
 function Main() {
     return (
-        <div className={styles.main}>
-            <div className={stylesContainer.container}>
-                <div className={styles.text}>
-                    <span>Hi There</span>
-                    <h1>J am Elena Kritskaya</h1>
-                    <p>Frontend Developer</p>
-                </div>
+        <div className={styles.container}>
+            <a name="home"/>
+            <div className={styles.main}>
                 <div className={styles.photo}>
-                    <img src={''} alt={''}/>
+                    <img src={ava} alt={''}/>
+                </div>
+                <div className={styles.text}>
+                    <span>Welcome</span>
+                    <h1>I'm Elena Kritskaya</h1>
+                    <p>Frontend Developer</p>
                 </div>
             </div>
         </div>

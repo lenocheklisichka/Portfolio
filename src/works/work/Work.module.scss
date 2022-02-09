@@ -1,0 +1,74 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
+.work {
+  width: 300px;
+  background-image: linear-gradient(45deg, #eaffe8, transparent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 10px 10px 10px 2px rgba(34, 60, 80, 0.2);
+
+  .img {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #000;
+      opacity: 0.2;
+    }
+
+    .projectViewBtn {
+      text-decoration: none;
+      width: 100px;
+      padding: 5px;
+      background: linear-gradient(135deg, #ffffff, #0470DC);
+      color: white;
+      position: relative;
+      z-index: 1;
+      top: 20%;
+    }
+  }
+
+  .projectViewBtn:hover {
+    background: linear-gradient(135deg, #0470DC, #ffffff);
+  }
+
+  .workInfo {
+    padding: 20px;
+
+    .titleWork {
+      @include text(16px, $fontFamily, 1.2);
+      font-size: 16px;
+      font-family: 'Josefin Sans', sans-serif;
+      line-height: 1.2;
+      letter-spacing: 1px;
+      margin: 0 0 5px;
+    }
+
+    .description {
+      font-size: 14px;
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.8;
+      font-weight: 400;
+    }
+  }
+
+  @media screen and (max-width: 1168px) {
+    margin: 10px;
+  }
+}

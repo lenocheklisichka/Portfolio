@@ -1,7 +1,10 @@
 .header {
-    background-color: aqua;
+    background-color: #000;
+    width: 100%;
     height: 80px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: fixed;
+    z-index: 2;
 }

@@ -1,5 +1,5 @@
 .contactsBlock {
-    background-color: #f48fb1;
+    background-color: #80deea;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -7,7 +7,6 @@
 }
 
 .contactsContainer {
-    border: 1px solid;
     width: 80%;
     height: 100%;
     margin: 0 auto;
@@ -17,12 +16,7 @@
     align-items: center;
 }
 
-.title {
-    background-color: #ffdf4a;
-}
-
 .contacts {
-    border: 1px solid;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -30,20 +24,54 @@
 
 .form {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    width: 260px;
-    border: 1px solid;
+    width: 50%;
     margin: 50px auto;
 }
 
-.inputForm {
-    margin-bottom: 10px;
+input {
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 17px;
+    border: none;
+    outline-color: #04BEFE;
+    background-color: #fff;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #bdbdbd;
+}
+
+input:hover, textarea:hover {
+    box-shadow: 0 5px 15px 0 #04BEFE;
+    border: none;
+    outline: 2px solid #04BEFE;
+    transition: background-color 5000s ease-in-out 0s;
 }
 
 .buttonForm {
-    width: 100px;
-    padding: 10px;
-    background-color: gold;
-    border: 1px solid gold;
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    font-size: 18px;
+    margin: 10px auto;
+    padding: 10px 30px;
+    background: linear-gradient(135deg, #25AAE1, #04BEFE, #3f86ED);
+    color: white;
+    border: 1px solid #04BEFE;
     border-radius: 10px;
 }
+
+.buttonForm:hover {
+    background: linear-gradient(135deg,#25AAE1,#0000ff,#3f86ED);
+    cursor: pointer;
+    border: 1px solid blue;
+}
+
+

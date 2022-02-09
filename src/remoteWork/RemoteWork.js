@@ -6,7 +6,7 @@ function RemoteWork() {
     <div className={styles.workBlock}>
         <div className={styles.workContainer}>
             <h2 className={styles.title}>Considering options for remote work</h2>
-            <button className={styles.button}>Hire me</button>
+            <a href={'/'}><button className={styles.button}>Hire me</button></a>
         </div>
     </div>
     );

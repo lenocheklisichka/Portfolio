@@ -1,10 +1,9 @@
 .workBlock {
-    background-color: bisque;
+    background-color: white;
 }
 
 .workContainer {
     flex-direction: column;
-    border: 1px solid;
     width: 80%;
     margin: auto;
     display: flex;
@@ -13,7 +12,6 @@
 }
 
 .title {
-    background-color: #58e7ff;
     font-size: 20px;
     text-align: center;
 }
@@ -21,7 +19,12 @@
 .button {
     width: 100px;
     padding: 10px;
-    background-color: sandybrown;
-    border: 1px solid sandybrown;
+    background: linear-gradient(135deg,#13F1FC,#0470DC);
+    border: 1px solid  #20c997;
     border-radius: 10px;
+}
+
+.button:hover {
+    cursor: pointer;
+    background: linear-gradient(135deg,#6253E1,#04BEFE);
 }

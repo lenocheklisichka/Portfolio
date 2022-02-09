@@ -1,17 +1,31 @@
 import React from "react";
-import styles from "./Works.module.css";
+import styles from "./Works.module.scss";
 import stylesContainer from "./../common/styles/Container.module.css";
 import Work from "./work/Work";
+import Title from "../common/components/title/Title";
+import socImage from "../assets/image/social-network.jpg";
+import todoImage from "../assets/image/todolist.gif";
+import counterImage from "../assets/image/counter.png"
 
 function Works() {
+    const social = {
+        backgroundImage: `url(${socImage})`
+    };
+    const todolist = {
+        backgroundImage: `url(${todoImage})`
+    };
+    const counter = {
+        backgroundImage: `url(${counterImage})`
+    };
     return (
         <div className={styles.worksBlock}>
-            <div className={`${stylesContainer.container} ${styles.worksContainer}`}>
-                <h2 className={styles.title}>My works</h2>
+            <a name='works'/>
+            <div className={`${stylesContainer.containers} ${styles.worksContainer}`}>
+                <Title text={'Projects'}/>
                 <div className={styles.works}>
-                    <Work title={"Social Network"} description={"Short description"}/>
-                    <Work title={"Todolist"} description={"Short description"}/>
-                    <Work title={"Counter"} description={"Short description"}/>
+                    <Work style={social} title={"Social Network"} description={"Lorem ipsum dolor sit amet, consecrated advising elite,"}/>
+                    <Work style={todolist} title={"Todolist"} description={"Lorem ipsum dolor sit amet, consecrated advising elite,"}/>
+                    <Work style={counter} title={"Counter"} description={"Lorem ipsum dolor sit amet, consecrated advising elite,"}/>
                 </div>
             </div>
         </div>

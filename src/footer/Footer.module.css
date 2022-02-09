@@ -1,11 +1,9 @@
 .footerBlock {
-    background-color: mediumspringgreen;
-    padding: 60px 0 30px 0;
+    padding: 30px 0 30px 0;
 }
 
 .footerContainer {
     flex-direction: column;
-    border: 1px solid;
     width: 80%;
     height: 100%;
     margin: 0 auto;
@@ -14,27 +12,40 @@
     justify-content: center;
 }
 
-.title {
-    background-color: #ffdf4a;
-}
-
 .iconBlock {
-    width: 260px;
-    height: 40px;
-    border: 1px solid;
-    margin: 100px auto;
+    margin: 30px auto;
 }
 
-.icons {
+.name {
+    color: #20c997;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.name:hover {
+    color: green;
+}
+
+.socialIcons {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 250px;
 }
 
-.icons img {
-    width: 40px;
-    height: 40px;
+.icon {
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px 7px rgba(34, 60, 80, 0.2);
+    transition: box-shadow 0.5s, transform 0.5s;
+    cursor: pointer;
 }
 
 .footer {
-    background-color: #ffdf4a
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
 }

@@ -1,0 +1,5 @@
+@mixin text($fontSize,$fontFamily,$lineHeight) {
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.2;
+}
