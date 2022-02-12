@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Skills.module.css";
-import stylesContainer from "./../common/styles/Container.module.css";
+import stylesContainer from "../common/styles/Container.module.scss";
 import Skill from "./skill/Skill";
 import Title from "../common/components/title/Title";
 import cssImage from "./iconSkills/css.png";

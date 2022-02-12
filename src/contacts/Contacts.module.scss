@@ -1,0 +1,78 @@
+@import "../common/styles/sass/variables";
+@import '../common/styles/sass/mixins';
+
+.contactsBlock {
+  background-color: $bgColor;
+  min-height: 100vh;
+  @include displayJustifyAlign(flex, center,center);
+
+  .contactsContainer {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+    @include displayJustifyAlign(flex, center,center);
+
+    .form {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 50%;
+      margin: 50px auto;
+
+      input {
+        margin-bottom: 20px;
+      }
+
+      input, textarea {
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        border: none;
+        outline-color: #00c853;
+        background-color: #fff;
+
+        input::placeholder, textarea::placeholder {
+          color: #bdbdbd;
+        }
+
+        input:hover, textarea:hover {
+          box-shadow: 0 5px 15px 0 #00c853;
+          border: none;
+          outline: 2px solid #00c853;
+          transition: background-color 5000s ease-in-out 0s;
+        }
+      }
+
+      .buttonForm {
+        display: flex;
+        justify-content: center;
+        width: 30%;
+        font-size: 18px;
+        margin: 10px auto;
+        padding: 10px 30px;
+        background: linear-gradient(135deg, #25AAE1, #04BEFE, #3f86ED);
+        color: white;
+        border: 1px solid #04BEFE;
+        border-radius: 10px;
+
+        &:hover {
+          background: linear-gradient(135deg, #25AAE1, #0000ff, #3f86ED);
+          cursor: pointer;
+          border: 1px solid blue;
+        }
+      }
+    }
+  }
+}
+
+
+//.contacts {
+//    width: 100%;
+//    margin: 0 auto;
+//    display: flex;
+//}
+
+
+

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Main.module.css";
+import styles from "./Main.module.scss";
 import ava from "../assets/image/photo-ava.jpg"
 
 function Main() {
@@ -13,7 +13,7 @@ function Main() {
                 <div className={styles.text}>
                     <span>Welcome</span>
                     <h1>I'm Elena Kritskaya</h1>
-                    <p>Frontend Developer</p>
+                    <p>Frontend-Developer</p>
                 </div>
             </div>
         </div>

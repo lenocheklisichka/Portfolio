@@ -1,9 +1,8 @@
+@import "../common/styles/sass/mixins";
 .worksBlock {
   background-color: #80deea;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include displayJustifyAlign(flex,center,center);
 
   .worksContainer {
     justify-content: center;

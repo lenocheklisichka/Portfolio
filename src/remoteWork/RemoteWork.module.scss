@@ -1,0 +1,30 @@
+@import "../common/styles/sass/mixins";
+@import "../common/styles/sass/variables";
+
+.workBlock {
+  background-color: white;
+
+  .workContainer {
+    @include flexBlock(flex, column, center);
+    width: 80%;
+    margin: auto;
+    padding-bottom: 20px;
+
+    .title {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .button {
+      width: 100px;
+      padding: 10px;
+      background: $bgBtnColor;
+      border: 1px solid #20c997;
+      border-radius: 10px;
+      &:hover {
+        cursor: pointer;
+        background: linear-gradient(135deg, #6253E1, #04BEFE);
+      }
+    }
+  }
+}

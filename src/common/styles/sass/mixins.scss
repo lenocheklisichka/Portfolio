@@ -3,3 +3,15 @@
   font-family: 'Josefin Sans', sans-serif;
   line-height: 1.2;
 }
+
+@mixin displayJustifyAlign($display,$justifyContent,$alignItems) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexBlock($display,$flexDirection,$alignItems){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
