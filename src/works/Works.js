@@ -18,8 +18,7 @@ function Works() {
         backgroundImage: `url(${counterImage})`
     };
     return (
-        <div className={styles.worksBlock}>
-            <a name='works'/>
+        <div id='works' className={styles.worksBlock}>
             <div className={`${stylesContainer.containers} ${styles.worksContainer}`}>
                 <Title text={'Projects'}/>
                 <div className={styles.works}>

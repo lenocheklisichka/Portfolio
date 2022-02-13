@@ -1,6 +1,8 @@
 @import "../common/styles/sass/mixins";
+@import "../common/styles/sass/variables";
+
 .worksBlock {
-  background-color: #80deea;
+  background-color: $bgColorWhite;
   min-height: 100vh;
   @include displayJustifyAlign(flex,center,center);
 
@@ -10,9 +12,7 @@
     .works {
       width: 100%;
       margin-top: 30px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      @include flexWrap(flex,wrap,space-between);
       @media screen and (max-width: 1168px) {
         justify-content: center;
       }

@@ -1,9 +1,9 @@
+@import '../../common/styles/sass/mixins';
+
 .containers {
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  @include flexWrap(flex, wrap, space-between);
+  align-items: center;
 }

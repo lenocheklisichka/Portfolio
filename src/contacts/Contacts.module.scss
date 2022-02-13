@@ -4,14 +4,14 @@
 .contactsBlock {
   background-color: $bgColor;
   min-height: 100vh;
-  @include displayJustifyAlign(flex, center,center);
+  @include displayJustifyAlign(flex, center, center);
 
   .contactsContainer {
     width: 80%;
     height: 100%;
     margin: 0 auto;
     flex-direction: column;
-    @include displayJustifyAlign(flex, center,center);
+    @include displayJustifyAlign(flex, center, center);
 
     .form {
       display: flex;
@@ -28,14 +28,9 @@
         padding: 10px;
         margin-bottom: 20px;
         border-radius: 5px;
-        font-size: 16px;
         border: none;
         outline-color: #00c853;
         background-color: #fff;
-
-        input::placeholder, textarea::placeholder {
-          color: #bdbdbd;
-        }
 
         input:hover, textarea:hover {
           box-shadow: 0 5px 15px 0 #00c853;

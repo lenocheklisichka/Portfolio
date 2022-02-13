@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Skills.module.css";
+import styles from "./Skills.module.scss";
 import stylesContainer from "../common/styles/Container.module.scss";
 import Skill from "./skill/Skill";
 import Title from "../common/components/title/Title";
@@ -20,14 +20,16 @@ function Skills() {
         backgroundImage: `url(${jsImage})`
     };
     const react = {
-        backgroundImage: `url(${reactImage})`
+        backgroundImage: `url(${reactImage})`,
+        backgroundColor: 'white'
     };
     const git = {
-        backgroundImage: `url(${gitImage})`
+        backgroundImage: `url(${gitImage})`,
+        backgroundColor: 'white',
+        borderRadius: '50px',
     };
     return (
-        <div className={styles.skillsBlock}>
-            <a name="skills"/>
+        <div id='skills' className={styles.skillsBlock}>
             <div className={`${stylesContainer.containers} ${styles.skillsContainer}`}>
                 <Title text={'Skills'}/>
                 <div className={styles.skills}>

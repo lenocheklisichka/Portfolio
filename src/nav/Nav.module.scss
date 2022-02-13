@@ -1,3 +1,5 @@
+@import "../common/styles/sass/variables";
+
 .nav {
   display: flex;
   width: 500px;
@@ -11,12 +13,12 @@
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
 
-    &:active {
-      color: #20c997;
+    &:hover {
+      color: $btnColorGreen;
     }
 
-    &:hover {
-      color: #20c997;
+    &:active {
+      color: $btnColorGreen;
     }
   }
 }

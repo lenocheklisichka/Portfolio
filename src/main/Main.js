@@ -4,7 +4,7 @@ import ava from "../assets/image/photo-ava.jpg"
 
 function Main() {
     return (
-        <div className={styles.container}>
+        <div id="home" className={styles.container}>
             <a name="home"/>
             <div className={styles.main}>
                 <div className={styles.photo}>
@@ -13,7 +13,11 @@ function Main() {
                 <div className={styles.text}>
                     <span>Welcome</span>
                     <h1>I'm Elena Kritskaya</h1>
-                    <p>Frontend-Developer</p>
+                    <span>Frontend-Developer</span>
+                    <p>Considering options for remote work</p>
+                    <a href={'/'}>
+                        <button className={styles.button}>Hire me</button>
+                    </a>
                 </div>
             </div>
         </div>
