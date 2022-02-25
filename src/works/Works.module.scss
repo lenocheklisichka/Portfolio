@@ -4,15 +4,15 @@
 .worksBlock {
   background-color: $bgColorWhite;
   min-height: 100vh;
-  @include displayJustifyAlign(flex,center,center);
+  @include displayJustifyAlign(flex, center, center);
 
   .worksContainer {
     justify-content: center;
 
     .works {
       width: 100%;
-      margin-top: 30px;
-      @include flexWrap(flex,wrap,space-between);
+      margin: 50px 0 50px;
+      @include flexWrap(flex, wrap, space-between);
       @media screen and (max-width: 1168px) {
         justify-content: center;
       }
