@@ -5,7 +5,7 @@ function Work(props) {
     return (
         <div className={styles.work}>
             <div className={styles.img} style={props.style}>
-                <a href={'/'} className={styles.projectViewBtn}>VIEW</a>
+                <a href={props.link}  target={"_blank"} className={styles.projectViewBtn}>VIEW</a>
             </div>
             <div className={styles.workInfo}>
                 <h3 className={styles.titleWork}>{props.title}</h3>

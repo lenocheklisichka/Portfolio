@@ -22,9 +22,14 @@ function Works() {
             <div className={`${stylesContainer.containers} ${styles.worksContainer}`}>
                 <Title text={'Projects'}/>
                 <div className={styles.works}>
-                    <Work style={social} title={"Social Network"} description={"Lorem ipsum dolor sit amet, consecrated advising elite,"}/>
-                    <Work style={todolist} title={"Todolist"} description={"Lorem ipsum dolor sit amet, consecrated advising elite,"}/>
-                    <Work style={counter} title={"Counter"} description={"Lorem ipsum dolor sit amet, consecrated advising elite,"}/>
+                    <Work style={social} title={"Social Network"}
+                          description={"Lorem ipsum dolor sit amet, consecrated advising elite,"}
+                          link={'https://lenocheklisichka.github.io/soc-network/'}/>
+                    <Work style={todolist} title={"Todolist"}
+                          description={"Lorem ipsum dolor sit amet, consecrated advising elite,"}/>
+                    <Work style={counter} title={"Counter"}
+                          description={"Lorem ipsum dolor sit amet, consecrated advising elite,"}
+                          link={'https://lenocheklisichka.github.io/counter-2/'}/>
                 </div>
             </div>
         </div>
