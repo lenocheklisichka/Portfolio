@@ -4,7 +4,7 @@ import stylesContainer from "../common/styles/Container.module.scss";
 import Skill from "./skill/Skill";
 import Title from "../common/components/title/Title";
 import cssImage from "./iconSkills/css.png";
-import htmlImage from "./iconSkills/html.png";
+import htmlImage from "./iconSkills/html-5.png";
 import jsImage from "./iconSkills/js.png";
 import reactImage from "./iconSkills/physics.png";
 import gitImage from "./iconSkills/github.png";
