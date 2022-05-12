@@ -12,52 +12,130 @@
     width: 100%;
     min-height: 100vh;
 
-    .photo img {
-      width: 300px;
-      @media screen and (max-width: 850px) {
-        margin-top: 70px;
-        padding-top: 70px;
-      }
+    .particles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
     }
 
-    .text {
-      text-align: center;
-      font-family: "Poppins", sans-serif;
+    .blockMain {
+      margin-top: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      width: 80%;
+      min-height: 100vh;
 
-      span {
-        @include textSpanHeaderP(500, 1.75rem, 1.8)
+      .photo {
+        position: relative;
+        z-index: 1;
+        @media screen and (max-width: 1050px) {
+          margin-top: 50px;
+        }
+
+        .image {
+          background-image: url("./../assets/image/photo-ava.jpg");
+          width: 300px;
+          height: 400px;
+          background-position: 80% 0;
+          @include bgSettings();
+          @media screen and (max-width: 677px) {
+            width: 260px;
+            height: 360px;
+            transition: .5s;
+          }
+          @media screen and (max-width: 554px) {
+            width: 240px;
+            height: 340px;
+            transition: .5s;
+          }
+
+          &:before {
+            content: '';
+            position: absolute;
+            height: 108%;
+            width: 100%;
+            border: 5px solid $colorPrimary;
+            right: 15px;
+            top: -15px;
+            z-index: -1;
+          }
+        }
       }
 
-      h1 {
-        line-height: 1.3;
-        font-weight: 600;
-        font-size: 50px;
-      }
+      .text {
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        @media screen and (max-width: 1051px) {
+          margin-top: 50px;
+        }
 
-      p {
-        @include textSpanHeaderP(500, 1.75rem, 1.8);
-        margin-top: 50px;
-      }
 
-      .button {
-        width: 100px;
-        padding: 10px;
-        background: $bgBtnColor;
-        border: none;
-        border-radius: 10px;
-        color: white;
-        font-weight: 600;
+        span {
+          @include textSpanHeaderP(1.3rem, 2)
+        }
 
-        &:hover {
-          cursor: pointer;
-          background: linear-gradient(135deg, #6253E1, #04BEFE);
+        h1 {
+          letter-spacing: 2px;
+          line-height: 2;
+          font-weight: 600;
+          font-size: 50px;
+          @media screen and (max-width: 677px) {
+            font-size: 40px;
+          }
+          @media screen and (max-width: 554px) {
+            font-size: 30px;
+          }
+          @media screen and (max-width: 432px) {
+            font-size: 24px;
+          }
+        }
+
+        .textH2 {
+          font-size: 30px;
+          line-height: 2;
+          @media screen and (max-width: 677px) {
+            font-size: 20px;
+          }
+          @media screen and (max-width: 432px) {
+            font-size: 18px;
+          }
+        }
+
+        p {
+          @include textSpanHeaderP(1.3rem, 4);
+
+          @media screen and (max-width: 677px) {
+            font-size: 1rem;
+          }
+          @media screen and (max-width: 554px) {
+            font-size: 0.9rem;
+          }
+        }
+
+        .button {
+          width: 150px;
+          padding: 10px;
+          background: $bgBtnColor;
+          border: none;
+          border-radius: 20px;
+          color: white;
+          font-weight: 600;
+          margin: 20px 0;
+
+          &:hover {
+            cursor: pointer;
+            background: linear-gradient(135deg, #6253E1, #04BEFE);
+          }
+
+          @media screen and (max-width: 677px) {
+            width: 100px;
+          }
         }
       }
     }
-
-    @media screen and (max-width: 850px) {
-      padding: 10px;
-    }
   }
-
 }

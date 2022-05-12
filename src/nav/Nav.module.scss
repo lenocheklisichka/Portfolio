@@ -4,7 +4,7 @@
   display: flex;
   width: 500px;
   justify-content: space-between;
-  margin: 70px;
+  margin-right: 50px ;
 
   & a {
     color: white;
@@ -14,11 +14,11 @@
     text-transform: uppercase;
 
     &:hover {
-      color: $btnColorGreen;
+      color: $colorPrimary;
+      cursor: pointer;
     }
-
-    &:active {
-      color: $btnColorGreen;
-    }
+  }
+    .active {
+      color: $colorPrimary;
   }
 }

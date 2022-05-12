@@ -5,7 +5,9 @@ import Work from "./work/Work";
 import Title from "../common/components/title/Title";
 import socImage from "../assets/image/social-network.jpg";
 import todoImage from "../assets/image/todolist.gif";
-import counterImage from "../assets/image/counter.png"
+import counterImage from "../assets/image/counter.png";
+import Fade from "react-reveal/Fade";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function Works() {
     const social = {
@@ -22,6 +24,7 @@ function Works() {
             <div className={`${stylesContainer.containers} ${styles.worksContainer}`}>
                 <Title text={'Projects'}/>
                 <div className={styles.works}>
+                    <Fade top>
                     <Work style={social} title={"Social Network"}
                           description={"Lorem ipsum dolor sit amet, consecrated advising elite,"}
                           link={'https://lenocheklisichka.github.io/soc-network/'}/>
@@ -30,6 +33,7 @@ function Works() {
                     <Work style={counter} title={"Counter"}
                           description={"Lorem ipsum dolor sit amet, consecrated advising elite,"}
                           link={'https://lenocheklisichka.github.io/counter-2/'}/>
+                    </Fade>
                 </div>
             </div>
         </div>

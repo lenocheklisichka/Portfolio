@@ -4,10 +4,9 @@
   line-height: 1.2;
 }
 
-@mixin textSpanHeaderP($fontWeight,$fontSize,$lineHeight) {
-  font-weight: 500;
-  font-size: 1.75rem;
-  line-height: 1.8;
+@mixin textSpanHeaderP($fontSize,$lineHeight) {
+  font-size: 1.3rem;
+  line-height: 4;
 }
 
 @mixin displayJustifyAlign($display,$justifyContent,$alignItems) {
@@ -26,5 +25,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+@mixin bgSettings() {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
