@@ -7,7 +7,6 @@ import socImage from "../assets/image/social-network.jpg";
 import todoImage from "../assets/image/todolist.gif";
 import counterImage from "../assets/image/counter.png";
 import Fade from "react-reveal/Fade";
-import { Link, animateScroll as scroll } from "react-scroll";
 
 function Works() {
     const social = {

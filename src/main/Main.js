@@ -46,9 +46,8 @@ const particlesOptions = {
 
 function Main() {
     return (
-        <div id="home" className={styles.container}>
-            <a name="home"/>
-            <div className={styles.main}>
+        <div className={styles.container}>
+            <div id='home' className={styles.main}>
                 <Particles className={styles.particles} params={particlesOptions}/>
                 <Fade top>
                     <div className={styles.blockMain}>
@@ -61,7 +60,6 @@ function Main() {
                         <div className={styles.text}>
                             <span>Welcome</span>
                             <h1>I'm Elena Kritskaya</h1>
-                            {/*<h2>Frontend Developer.</h2>*/}
                             <ReactTypingEffect className={styles.textH2}
                                 text="Frontend Developer."
                             />
