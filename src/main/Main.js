@@ -46,8 +46,8 @@ const particlesOptions = {
 
 function Main() {
     return (
-        <div className={styles.container}>
-            <div id='home' className={styles.main}>
+        <div id='home' className={styles.container}>
+            <div className={styles.main}>
                 <Particles className={styles.particles} params={particlesOptions}/>
                 <Fade top>
                     <div className={styles.blockMain}>

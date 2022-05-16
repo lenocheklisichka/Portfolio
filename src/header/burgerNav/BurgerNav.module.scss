@@ -1,0 +1,28 @@
+@import "../../common/styles/sass/variables";
+
+.burgerNav {
+  display: flex;
+  width: 100%;
+  background-color: cornflowerblue;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  & a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+      color: $colorPrimary;
+    }
+  }
+  .active {
+    color: $colorPrimary;
+  }
+  @media screen and (min-width: 400px){
+    display: none;
+  }
+}

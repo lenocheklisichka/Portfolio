@@ -8,7 +8,7 @@ function Nav() {
             <Link
                 activeClass={styles.active} to="home"
                 spy={true} smooth={true}
-                offset={1} duration={500}>Home
+                offset={-1} duration={500}>Home
             </Link>
             <Link
                 activeClass={styles.active} to="skills"

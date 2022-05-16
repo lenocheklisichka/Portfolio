@@ -9,7 +9,7 @@
     width: 80%;
     height: 100%;
     margin: 0 auto;
-    @include displayJustifyAlign(flex, center,center);
+    @include displayJustifyAlign(flex, center, center);
 
     .iconBlock {
       margin: 30px auto;
@@ -24,6 +24,8 @@
       .icon {
         transform: scale(1);
         transition: transform 0.5s;
+        width: 30px;
+        height: 30px;
 
         &:hover {
           transform: scale(1.2);
