@@ -1,28 +1,86 @@
 @import "../../common/styles/sass/variables";
 
 .burgerNav {
-  display: flex;
   width: 100%;
-  background-color: cornflowerblue;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  height: 100%;
+  background-color: black;
 
-  & a {
+  .burgerNavItems {
+    width: 100%;
+    background-color: black;
     color: white;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: "Poppins", sans-serif;
-    text-transform: uppercase;
-    cursor: pointer;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    display: none;
 
-    &:hover {
-      color: $colorPrimary;
+    & a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-family: "Poppins", sans-serif;
+      text-transform: uppercase;
+      cursor: pointer;
+      text-align: center;
+      padding: 5px;
+
+      &:hover {
+        color: $colorPrimary;
+      }
     }
   }
+
+  .show {
+    display: flex;
+    line-height: 2;
+    font-size: 15px;
+    width: 100%;
+    background-color: black;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin-top: 50px;
+  }
+
   .active {
     color: $colorPrimary;
   }
-  @media screen and (min-width: 400px){
+
+  @media screen and (min-width: 440px) {
     display: none;
+  }
+
+  .btnMenu {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 34%;
+    left: 10%;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+
+    span {
+      width: 30px;
+      height: 2px;
+      position: absolute;
+      background-color: white;
+    }
+
+    span:nth-of-type(2) {
+      top: calc(50% - 5px);
+    }
+
+    span:nth-of-type(3) {
+      top: calc(50% + 5px);
+    }
   }
 }

@@ -25,12 +25,12 @@ function Works() {
                 <div className={styles.works}>
                     <Fade top>
                     <Work style={social} title={"Social Network"}
-                          description={"Lorem ipsum dolor sit amet, consecrated advising elite,"}
+                          description={"Project Social network with the ability to add posts, subscribe, login. Stack used: TypeScript, React, Redux, Redux Thunk, Axios."}
                           link={'https://lenocheklisichka.github.io/soc-network/'}/>
                     <Work style={todolist} title={"Todolist"}
-                          description={"Lorem ipsum dolor sit amet, consecrated advising elite,"}/>
+                          description={"Project Todolists with the ability to add todolists, tasks. Stack used: TypeScript, React, Redux, Redux Thunk, Axios."}/>
                     <Work style={counter} title={"Counter"}
-                          description={"Lorem ipsum dolor sit amet, consecrated advising elite,"}
+                          description={"Project Counter. Stack used: TypeScript, React, Reducer, Store"}
                           link={'https://lenocheklisichka.github.io/counter-2/'}/>
                     </Fade>
                 </div>

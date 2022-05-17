@@ -1,11 +1,11 @@
 @import "../../common/styles/sass/variables";
 
-.burgerNav {
+.nav {
   display: flex;
   width: 500px;
   justify-content: space-between;
   flex-wrap: nowrap;
-  margin-right: 50px ;
+  margin: 0 30px ;
 
   & a {
     color: white;
@@ -18,11 +18,21 @@
       color: $colorPrimary;
       cursor: pointer;
     }
+    &:after {
+      display: block;
+      content: "";
+      border-bottom: 3px solid $colorPrimary;
+      transform: scaleX(0);
+      transition: transform .25s ease-in-out
+    }
+    &:hover:after {
+      transform: scaleX(1);
+    }
   }
     .active {
       color: $colorPrimary;
   }
-  //@media screen and (max-width: 400px){
-  //  display: none;
-  //}
+  @media screen and (max-width: 440px){
+    display: none;
+  }
 }
