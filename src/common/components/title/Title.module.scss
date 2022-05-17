@@ -10,12 +10,11 @@
   letter-spacing: 5px;
   line-height: 1.2;
   position: relative;
-
-  h2 {
-    margin: 0;
-    @media screen and (max-width: 1168px) {
-      margin-top: 50px;
-    }
+  @media screen and (max-width: 1168px) {
+    margin-top: 50px;
+  }
+  @media screen and (min-width: 562px) {
+    font-size: 40px;
   }
 
   &::before {
