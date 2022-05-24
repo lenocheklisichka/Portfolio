@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Main.module.scss";
 import Particles from "react-tsparticles";
 import Fade from "react-reveal/Fade";
+import Flip from "react-reveal/Flip";
 import ReactTypingEffect from 'react-typing-effect';
 import Tilt from 'react-tilt'
 
@@ -49,19 +50,21 @@ function Main() {
         <div id='home' className={styles.container}>
             <div className={styles.main}>
                 <Particles className={styles.particles} params={particlesOptions}/>
-                <Fade top>
+                <Fade left>
                     <div className={styles.blockMain}>
-                        <Tilt className="Tilt" options={{ max : 25 }}>
+                        <Tilt className="Tilt" options={{max: 25}}>
                             <div className={styles.photo}>
                                 <div className={styles.image}>
                                 </div>
                             </div>
                         </Tilt>
                         <div className={styles.text}>
-                            <span>Welcome</span>
+                            <Flip>
+                                <p>Welcome</p>
+                            </Flip>
                             <h1>I'm Elena Kritskaya</h1>
                             <ReactTypingEffect className={styles.textH2}
-                                text="Frontend Developer."
+                                               text="Frontend Developer."
                             />
                             <p>looking into remote work options</p>
                             <a href={'/'}>

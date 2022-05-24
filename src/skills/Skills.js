@@ -33,28 +33,30 @@ function Skills() {
         <div id='skills' className={styles.skillsBlock}>
             <div className={`${stylesContainer.containers} ${styles.skillsContainer}`}>
                 <Title text={'Skills'}/>
-                <div className={styles.skills}>
-                    <Fade top>
-                        {/*description={"Lorem ipsum dolor sit amet, consecrated advising "}*/}
-                        <Skill style={html} title={'HTML'}/>
-                    </Fade>
-                    <Fade bottom>
-                        <Skill style={css} title={'CSS'}/>
-                    </Fade>
-                    <Fade top>
-                        <Skill style={js} title={'JS'}/>
-                    </Fade>
-                    <Fade bottom>
-                        <Skill style={react} title={'REACT'}/>
-                    </Fade>
-                    <Fade top>
-                        <Skill style={git} title={'GIT'}/>
-                    </Fade>
-                </div>
+                <Fade bottom>
+                    <div className={styles.skills}>
+                        <Fade bottom>
+                            {/*description={"Lorem ipsum dolor sit amet, consecrated advising "}*/}
+                            <Skill style={html} title={'HTML'}/>
+                        </Fade>
+                        <Fade bottom>
+                            <Skill style={css} title={'CSS'}/>
+                        </Fade>
+                        <Fade bottom>
+                            <Skill style={js} title={'JS'}/>
+                        </Fade>
+                        <Fade bottom>
+                            <Skill style={react} title={'REACT'}/>
+                        </Fade>
+                        <Fade bottom>
+                            <Skill style={git} title={'GIT'}/>
+                        </Fade>
+                    </div>
+                </Fade>
             </div>
-</div>
-)
-    ;
+        </div>
+    )
+        ;
 }
 
 export default Skills;

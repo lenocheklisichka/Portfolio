@@ -31,7 +31,7 @@ function Works() {
                           link={'https://lenocheklisichka.github.io/it-incubator-todolist-ts/'}
                           description={"Project Todolists with the ability to add todolists, tasks. Stack used: TypeScript, React, Redux, Redux Thunk, Axios."}/>
                     <Work style={counter} title={"Counter"}
-                          description={"Project Counter. Stack used: TypeScript, React, Reducer, Store"}
+                          description={"Project Counter with settings,allows you to enter the maximum and minimum value of the counter . Stack used: TypeScript, React."}
                           link={'https://lenocheklisichka.github.io/counter-2/'}/>
                     </Fade>
                 </div>
