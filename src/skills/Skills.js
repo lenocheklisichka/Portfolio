@@ -8,6 +8,7 @@ import htmlImage from "./iconSkills/html-5.png";
 import jsImage from "./iconSkills/js.png";
 import reactImage from "./iconSkills/physics.png";
 import gitImage from "./iconSkills/github.png";
+import tsImage from "./iconSkills/ts.png"
 import Fade from "react-reveal/Fade"
 
 function Skills() {
@@ -24,6 +25,9 @@ function Skills() {
         backgroundImage: `url(${reactImage})`,
         backgroundColor: 'white'
     };
+    const ts = {
+        backgroundImage: `url(${tsImage})`
+    };
     const git = {
         backgroundImage: `url(${gitImage})`,
         backgroundColor: 'white',
@@ -36,7 +40,6 @@ function Skills() {
                 <Fade bottom>
                     <div className={styles.skills}>
                         <Fade bottom>
-                            {/*description={"Lorem ipsum dolor sit amet, consecrated advising "}*/}
                             <Skill style={html} title={'HTML'}/>
                         </Fade>
                         <Fade bottom>
@@ -47,6 +50,9 @@ function Skills() {
                         </Fade>
                         <Fade bottom>
                             <Skill style={react} title={'REACT'}/>
+                        </Fade>
+                        <Fade bottom>
+                            <Skill style={ts} title={'TS'}/>
                         </Fade>
                         <Fade bottom>
                             <Skill style={git} title={'GIT'}/>

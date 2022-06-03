@@ -115,26 +115,6 @@
             font-size: 0.9rem;
           }
         }
-
-        .button {
-          width: 150px;
-          padding: 10px;
-          background: $bgBtnColor;
-          border: none;
-          border-radius: 20px;
-          color: white;
-          font-weight: 600;
-          margin: 20px 0;
-
-          &:hover {
-            cursor: pointer;
-            background: linear-gradient(135deg, #6253E1, #04BEFE);
-          }
-
-          @media screen and (max-width: 677px) {
-            width: 100px;
-          }
-        }
       }
     }
   }

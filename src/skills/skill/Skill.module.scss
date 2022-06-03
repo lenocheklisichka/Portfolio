@@ -2,7 +2,7 @@
 
 .skill {
   width: 200px;
-  @include flexBlock(flex,column,center);
+  @include flexBlock(flex, column, center);
   text-align: center;
   box-sizing: border-box;
 
@@ -16,6 +16,7 @@
     @media screen and (max-width: 440px) {
       width: 80px;
       height: 80px;
+      margin: 30px auto;
     }
 
     &:hover {
@@ -25,12 +26,9 @@
       cursor: pointer;
     }
   }
+
   .header {
     margin-top: 20px;
-  }
-
-  .description {
-    margin-bottom: 10px;
   }
 
   @media screen and (max-width: 994px) {
