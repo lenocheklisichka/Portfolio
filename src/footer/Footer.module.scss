@@ -16,9 +16,12 @@
 
       .socialIcons {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        width: 150px;
+        width: 140px;
+      }
+      ul {
+        padding-left: 0;
       }
 
       li {
