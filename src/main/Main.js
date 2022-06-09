@@ -20,75 +20,75 @@ function Main() {
         <div id='home' className={styles.container}>
             <div className={styles.main}>
                 <Particles className={styles.particles}
-                    id="tsparticles"
-                    init={particlesInit}
-                    loaded={particlesLoaded}
-                    options={{
-                        fpsLimit: 50,
-                        interactivity: {
-                            events: {
-                                onClick: {
-                                    enable: true,
-                                    mode: "push",
-                                },
-                                onHover: {
-                                    enable: true,
-                                },
-                                resize: true,
-                            },
-                            modes: {
-                                push: {
-                                    quantity: 4,
-                                },
-                                repulse: {
-                                    distance: 200,
-                                    duration: 0.4,
-                                },
-                            },
-                        },
-                        particles: {
-                            color: {
-                                value: "#bdbdbd"
-                            },
-                            links: {
-                                color: "#000",
-                                distance: 120,
-                                enable: true,
-                                opacity: 0.3,
-                                width: 1,
-                            },
-                            collisions: {
-                                enable: true,
-                            },
-                            move: {
-                                direction: "none",
-                                enable: true,
-                                outModes: {
-                                    default: "bounce",
-                                },
-                                random: false,
-                                speed: 1,
-                                straight: false,
-                            },
-                            number: {
-                                density: {
-                                    enable: true,
-                                    area: 800,
-                                },
-                                value: 80,
-                            },
-                            opacity: {
-                                value: 0.5,
-                            },
-                            shape: {
-                                type: "circle",
-                            },
-                            size: {
-                                value: {min: 1, max: 5},
-                            },
-                        },
-                        detectRetina: true,
-                    }}
+                           id="tsparticles"
+                           init={particlesInit}
+                           loaded={particlesLoaded}
+                           options={{
+                               fpsLimit: 50,
+                               interactivity: {
+                                   events: {
+                                       onClick: {
+                                           enable: true,
+                                           mode: "push",
+                                       },
+                                       onHover: {
+                                           enable: true,
+                                       },
+                                       resize: true,
+                                   },
+                                   modes: {
+                                       push: {
+                                           quantity: 4,
+                                       },
+                                       repulse: {
+                                           distance: 200,
+                                           duration: 0.4,
+                                       },
+                                   },
+                               },
+                               particles: {
+                                   color: {
+                                       value: "#bdbdbd"
+                                   },
+                                   links: {
+                                       color: "#000",
+                                       distance: 120,
+                                       enable: true,
+                                       opacity: 0.3,
+                                       width: 1,
+                                   },
+                                   collisions: {
+                                       enable: true,
+                                   },
+                                   move: {
+                                       direction: "none",
+                                       enable: true,
+                                       outModes: {
+                                           default: "bounce",
+                                       },
+                                       random: false,
+                                       speed: 1,
+                                       straight: false,
+                                   },
+                                   number: {
+                                       density: {
+                                           enable: true,
+                                           area: 800,
+                                       },
+                                       value: 80,
+                                   },
+                                   opacity: {
+                                       value: 0.5,
+                                   },
+                                   shape: {
+                                       type: "circle",
+                                   },
+                                   size: {
+                                       value: {min: 1, max: 5},
+                                   },
+                               },
+                               detectRetina: true,
+                           }}
                 />
                 <Fade left>
                     <div className={styles.blockMain}>
