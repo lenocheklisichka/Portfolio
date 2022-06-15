@@ -5,6 +5,7 @@
   background-color: $bgColor;
   min-height: 100vh;
   @include displayJustifyAlign(flex, center, center);
+  position: relative;
 
   .contactsContainer {
     width: 100%;
